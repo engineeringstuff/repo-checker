@@ -1,0 +1,19 @@
+{
+	"overrides": [
+		{
+			"files": ["package.json", "**/package.json"],
+			"options": { "parser": "json" }
+		}
+	],
+	"printWidth": 120,
+	"plugins": [],
+	"pluginSearchDirs": ["."],
+	"semi": true,
+	"singleQuote": true,
+	"trailingComma": "all",
+	"tabWidth": 2,
+	"useTabs": true,
+	"htmlWhitespaceSensitivity": "ignore",
+  "jsxSingleQuote": true,
+  "bracketSameLine": true
+}

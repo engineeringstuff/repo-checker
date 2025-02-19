@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	@apply text-blue-500;
+}
+
+hr {
+	@apply my-1 border-2 border-gray-300;
+}
+
+input {
+	@apply border border-gray-300 rounded-md p-2;
+}
+
+code {
+	@apply border border-yellow-200 whitespace-pre-line inline-block rounded-md bg-yellow-50;
+}
+pre > code {
+	@apply block my-2 break-words mx-4 p-2;
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+
+.marked-down p:first-child {
+	@apply pt-0;
+}
+
+.marked-down p:last-child {
+	@apply pb-0;
+}
+
+.marked-down p {
+	@apply py-2;
+}
+
+.marked-down ol,
+ul {
+	@apply list-disc;
+}
+
+.marked-down li {
+	@apply ml-4;
+}
+
+.marked-down strong {
+	@apply font-bold;
+}
+
+.critique-row {
+	@apply flex py-2;
+}
+
+.critique-label {
+	@apply w-52;
+}

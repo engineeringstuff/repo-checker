@@ -1,0 +1,18 @@
+services:
+  server:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=development
+      - WATCHPACK_POLLING=true
+    env_file:
+      - path: .env
+        required: true
+    ports:
+      - 0.0.0.0:3000:3000
+    restart: on-failure:5
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
