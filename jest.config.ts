@@ -16,7 +16,7 @@ const config: Config = {
 	coverageProvider: 'v8',
 
 	moduleNameMapper: {
-		'^@/(.*)$': ['<rootDir>/src/$1'],
+		'^@/(.*)$': ['<rootDir>/$1'],
 	},
 	moduleDirectories: ['js', __dirname, 'node_modules'],
 
